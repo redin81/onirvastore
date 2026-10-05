@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ONIRVA | Golf Training Equipment</title>
+  <meta name="description" content="ONIRVA golf training equipment designed to help golfers improve swing tempo, grip and consistency.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #181818;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #eeeeee;
+      padding: 18px 30px;
+    }
+
+    .header-inner {
+      max-width: 1150px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      width: 145px;
+      height: auto;
+      display: block;
+    }
+
+    nav a {
+      color: #222222;
+      text-decoration: none;
+      margin-left: 28px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .hero {
+      background: #f6f7f5;
+      text-align: center;
+      padding: 70px 20px 55px;
+    }
+
+    .hero-logo {
+      width: 210px;
+      max-width: 65%;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      font-size: 44px;
+      line-height: 1.15;
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+
+    .hero p {
+      color: #666666;
+      font-size: 18px;
+    }
+
+    .product-section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 75px 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .product-image {
+      width: 100%;
+      max-height: 650px;
+      object-fit: contain;
+      border-radius: 8px;
+      background: #ffffff;
+    }
+
+    .brand-label {
+      font-size: 13px;
+      letter-spacing: 2px;
+      font-weight: bold;
+      color: #4f6d42;
+      margin-bottom: 10px;
+    }
+
+    .product-info h2 {
+      font-size: 34px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .product-info p {
+      color: #555555;
+      font-size: 17px;
+      margin-bottom: 26px;
+    }
+
+    .features {
+      margin: 25px 0 32px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .features li {
+      padding: 10px 0;
+      border-bottom: 1px solid #eeeeee;
+      font-size: 15px;
+    }
+
+    .features li:before {
+      content: "✓";
+      color: #4f6d42;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .amazon-button {
+      display: inline-block;
+      background: #111111;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 16px 30px;
+      border-radius: 4px;
+      font-size: 15px;
+      font-weight: bold;
+      letter-spacing: .5px;
+      transition: 0.2s;
+    }
+
+    .amazon-button:hover {
+      background: #3f5f35;
+    }
+
+    .benefits {
+      background: #f6f7f5;
+      padding: 60px 25px;
+    }
+
+    .benefits-inner {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      text-align: center;
+    }
+
+    .benefit h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .benefit p {
+      color: #666666;
+      font-size: 14px;
+    }
+
+    .about {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      padding: 75px 25px;
+    }
+
+    .about h2 {
+      font-size: 30px;
+      margin-bottom: 18px;
+    }
+
+    .about p {
+      color: #666666;
+      font-size: 16px;
+    }
+
+    footer {
+      border-top: 1px solid #eeeeee;
+      padding: 30px 20px;
+      text-align: center;
+      color: #777777;
+      font-size: 13px;
+    }
+
+    @media (max-width: 760px) {
+      nav {
+        display: none;
+      }
+
+      .header-logo {
+        width: 120px;
+      }
+
+      .hero {
+        padding: 50px 20px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .product-section {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 50px 20px;
+      }
+
+      .product-info h2 {
+        font-size: 28px;
+      }
+
+      .benefits-inner {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <img src="onirva-logo.png" alt="ONIRVA" class="header-logo">
+
+    <nav>
+      <a href="#product">Product</a>
+      <a href="#about">About ONIRVA</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <img src="onirva-logo.png" alt="ONIRVA Logo" class="hero-logo">
+
+  <h1>Train Smarter. Swing Better.</h1>
+
+  <p>
+    Golf training equipment designed for focused, consistent practice.
+  </p>
+</section>
+
+<section class="product-section" id="product">
+
+  <div>
+    <img
+      src="product.jpg"
+      alt="ONIRVA Golf Swing Trainer with Arm Band and Packaging"
+      class="product-image"
+    >
+  </div>
+
+  <div class="product-info">
+
+    <div class="brand-label">ONIRVA</div>
+
+    <h2>Tempo Stick Golf Swing Trainer</h2>
+
+    <p>
+      A retractable weighted golf swing trainer designed to support
+      tempo, grip stability and consistent swing practice.
+      Includes a bonus arm band for swing-form training.
+    </p>
+
+    <ul class="features">
+      <li>Instant click feedback</li>
+      <li>Retractable training design</li>
+      <li>Ergonomic golf grip trainer</li>
+      <li>Bonus arm band included</li>
+      <li>Suitable for indoor and outdoor practice</li>
+    </ul>
+
+    <a
+      href="https://www.amazon.com/dp/B0GWKCYPYQ"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="amazon-button"
+    >
+      BUY ON AMAZON
+    </a>
+
+  </div>
+
+</section>
+
+<section class="benefits">
+
+  <div class="benefits-inner">
+
+    <div class="benefit">
+      <h3>Instant Feedback</h3>
+      <p>
+        Audible click feedback helps you practice swing tempo and sequencing.
+      </p>
+    </div>
+
+    <div class="benefit">
+      <h3>Practice Anywhere</h3>
+      <p>
+        Retractable design makes practice convenient at home or at the range.
+      </p>
+    </div>
+
+    <div class="benefit">
+      <h3>Focused Training</h3>
+      <p>
+        Designed to support grip, tempo and repeatable swing practice.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="about" id="about">
+
+  <h2>About ONIRVA</h2>
+
+  <p>
+    ONIRVA develops practical golf training equipment for golfers
+    who want to make every practice session more focused and effective.
+  </p>
+
+</section>
+
+<footer>
+  © 2026 ONIRVA. All rights reserved.
+</footer>
+
+</body>
+</html>
